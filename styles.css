@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #121212; /* Dark background */
+    background-color: #1e1e1e; /* Darker background for the entire page */
     color: #e0e0e0; /* Light text color */
 }
 
@@ -13,6 +13,7 @@ header {
     position: relative;
     width: 100%;
     color: #e0e0e0;
+    background-color: #121212; /* Dark background for header */
 }
 
 /* Navigation Container */
@@ -71,6 +72,8 @@ nav ul li a:hover {
     color: #e0e0e0;
     height: 70vh; /* Adjust height as needed */
     overflow: hidden;
+    background: url('path-to-your-image.jpg') no-repeat center center; /* Background image */
+    background-size: cover; /* Cover the whole section */
 }
 
 .intro img.cover-image {
@@ -102,7 +105,7 @@ nav ul li a:hover {
 section#features {
     padding: 60px 20px;
     text-align: center;
-    background-color: #1e1e1e; /* Dark background */
+    background-color: #2c2c2c; /* Slightly lighter dark background */
 }
 
 section#features h2 {
@@ -162,7 +165,7 @@ section#features h2 {
 section#about {
     padding: 60px 20px;
     text-align: center;
-    background-color: #1e1e1e; /* Dark background */
+    background-color: #2c2c2c; /* Slightly lighter dark background */
     position: relative;
 }
 
@@ -273,7 +276,7 @@ section#about h2 {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #1e1e1e; /* Dark background */
+    background-color: #2c2c2c; /* Slightly lighter dark background */
     color: #e0e0e0;
 }
 
@@ -317,7 +320,7 @@ footer {
 /* Showcase or Gallery Section */
 section#showcase {
     padding: 60px 20px;
-    background-color: #1e1e1e; /* Dark background */
+    background-color: #2c2c2c; /* Slightly lighter dark background */
     color: #e0e0e0;
     text-align: center;
 }
@@ -383,7 +386,7 @@ section#showcase h2 {
 /* Project Roadmap Section */
 section#roadmap {
     padding: 60px 20px;
-    background-color: #1e1e1e; /* Dark background */
+    background-color: #2c2c2c; /* Slightly lighter dark background */
     color: #e0e0e0;
     text-align: center;
 }
