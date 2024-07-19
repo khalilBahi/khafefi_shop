@@ -1,0 +1,162 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+   
+<!-- Mirrored from html.hixstudio.net/shofy-prv/shofy/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Feb 2024 16:29:40 GMT -->
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Place favicon.ico in the root directory -->
+      <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+
+   </head>
+   <body>
+      <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+
+      <!-- pre loader area start -->
+      <app-chargement></app-chargement>
+      <!-- pre loader area end -->
+
+      <!-- back to top start -->
+      <div class="back-to-top-wrapper">
+         <button id="back_to_top" type="button" class="back-to-top-btn">
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>               
+         </button>
+      </div>
+      <!-- back to top end -->
+      <!-- mobile menu area start -->
+      <app-menu></app-menu>
+      <!-- mobile menu area end -->
+
+      <!-- header area start -->
+      <app-header></app-header>
+      <!-- header area end -->
+
+
+    <main>
+
+        <!-- breadcrumb area start -->
+        <section class="breadcrumb__area include-bg text-center pt-95 pb-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12">
+                        <div class="breadcrumb__content p-relative z-index-1">
+                            <h3 class="breadcrumb__title">Sing Up</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- breadcrumb area end -->
+    
+        <!-- login area start -->
+        <section class="tp-login-area pb-140 p-relative z-index-1 fix">
+            <div class="tp-login-shape">
+                <img class="tp-login-shape-1" src="assets/img/login/login-shape-1.png" alt="">
+                <img class="tp-login-shape-2" src="assets/img/login/login-shape-2.png" alt="">
+                <img class="tp-login-shape-3" src="assets/img/login/login-shape-3.png" alt="">
+                <img class="tp-login-shape-4" src="assets/img/login/login-shape-4.png" alt="">
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-8">
+                        <form (ngSubmit)="addNewClient()" [formGroup]="clientForm">
+                            <div class="tp-login-wrapper">
+                                <div class="tp-login-top text-center mb-30">
+                                    <h3 class="tp-login-title">Create your account in khazefi</h3>
+                                    <p>You already have an account ?<span><a href="/LoginClient">Connexion</a></span></p>
+
+                                </div>
+                                <div class="tp-login-option">
+                                    
+                                    <div class="tp-login-mail text-center mb-40">
+                                        <p>Sign up with<a href="#">E-mail</a></p>
+                                    </div>
+                                    <div class="tp-login-input-wrapper">
+                                        <div class="tp-login-input-box">
+                                            <div class="tp-login-input">
+                                                <input id="firstName" type="text" placeholder="Shahnewaz " formControlName="firstName">
+                                            </div>
+                                            <div class="tp-login-input-title">
+                                                <label for="firstName">FirstName</label>
+                                            </div>
+                                        </div>
+                                        <div class="tp-login-input-box">
+                                            <div class="tp-login-input">
+                                                <input id="lastName" type="text" placeholder=" Sakil" formControlName="lastName">
+                                            </div>
+                                            <div class="tp-login-input-title">
+                                                <label for="lastName">LastName</label>
+                                            </div>
+                                        </div>
+                                        <div class="tp-login-input-box">
+                                            <div class="tp-login-input">
+                                                <input id="email" type="email" placeholder="khazefishop@mail.com" formControlName="email">
+                                            </div>
+                                            <div class="tp-login-input-title">
+                                                <label for="email">E-mail</label>
+                                            </div>
+                                        </div>
+                                        <div class="tp-login-input-box">
+                                            <div class="tp-login-input">
+                                                <input id="tp_password" type="password" placeholder="Min. 6 character" formControlName="mdp">
+                                            </div>
+                                            <div class="tp-login-input-eye" id="password-show-toggle">
+                                                <!-- Code pour l'œil pour montrer le mot de passe -->
+                                            </div>
+                                            <div class="tp-login-input-title">
+                                                <label for="tp_password">Password</label>
+                                            </div>
+                                        </div>
+                                        <div class="tp-login-input-box">
+                                            <div class="tp-login-input">
+                                                <input id="adress" type="text" placeholder="nabeul" formControlName="adress">
+                                            </div>
+                                            <div class="tp-login-input-title">
+                                                <label for="adress">Adresse</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tp-login-suggetions d-sm-flex align-items-center justify-content-between mb-20">
+                                        <div class="tp-login-remeber">
+                                            <input id="remeber" type="checkbox">
+                                            <label for="remeber">I accept the terms of service and the <a href="#">Privacy policy</a>.</label>
+                                         </div>
+                                     </div>
+                                     <div class="tp-login-bottom">
+                                         <button type="submit" class="btn btn-primary">sign up</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- login area end -->
+    
+    </main>
+    
+
+      
+
+      <!-- footer area start -->
+      <app-footer></app-footer>
+      <!-- footer area end -->
+
+
+
+      
+   </body>
+
+<!-- Mirrored from html.hixstudio.net/shofy-prv/shofy/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Feb 2024 16:29:40 GMT -->
+</html>

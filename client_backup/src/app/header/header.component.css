@@ -1,0 +1,18 @@
+.tp-header-login-title {
+    cursor: pointer; /* Make the cursor a pointer to indicate it's clickable */
+    padding: 10px 20px; /* Add some padding around the text */
+    background-color: #007bff; /* A blue background color */
+    color: white; /* White text color */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center the text */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .tp-header-login-title:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .tp-header-login-title:active {
+    background-color: #004080; /* Even darker blue when active (clicked) */
+  }
+  

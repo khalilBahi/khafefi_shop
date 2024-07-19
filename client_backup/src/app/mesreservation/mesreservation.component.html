@@ -1,0 +1,146 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+   
+<!-- Mirrored from html.hixstudio.net/ChasoStore-prv/ChasoStore/shop-filter-offcanvas.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Feb 2024 16:29:29 GMT -->
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+     
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Place favicon.ico in the root directory -->
+      <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+
+      
+   </head>
+   <body>
+      <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+
+      <!-- pre loader area start -->
+      <app-chargement></app-chargement>
+      <!-- pre loader area end -->
+
+      <!-- back to top start -->
+      <div class="back-to-top-wrapper">
+         <button id="back_to_top" type="button" class="back-to-top-btn">
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>               
+         </button>
+      </div>
+      <!-- back to top end -->
+
+   
+
+      <!-- mobile menu area start -->
+      <app-menu></app-menu>
+      <!-- mobile menu area end -->
+
+      <!-- header area start -->
+      <app-header></app-header>
+      <!-- header area end -->
+
+     
+
+      <main>
+
+         <!-- breadcrumb area start -->
+         <section class="breadcrumb__area include-bg pt-100 pb-50">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xxl-12">
+                     <div class="breadcrumb__content p-relative z-index-1">
+                        <h3 class="breadcrumb__title">Liste des Commandes</h3>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- breadcrumb area end -->
+
+         <!-- shop area start -->
+         <section class="tp-shop-area pb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="tp-shop-main-wrapper">
+                           
+                            <div class="tp-shop-items-wrapper tp-shop-item-primary">
+                               
+                                <table class="table" *ngIf="listReservation.length>0" style="text-align: center;">
+                                    <thead>
+                                        <tr>
+                            
+                                            <th >Nom de client</th>
+                                            <th scope="col">Nom</th>
+                                            <th scope="col">Prix (dt)</th>
+                                            <th scope="col">Adresse</th>
+                                           
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let offre of listReservation">
+                                            <th scope="row">
+                                                <div class="alert alert-light" role="alert">
+                                                    {{offre?.client?.firstName}} {{offre?.client?.lastName}}
+                                                </div>
+                                            </th>
+                                            <td>
+                                               
+                                                <div class="alert alert-light" role="alert">
+                                                    {{offre?.product?.nom  }}
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="alert alert-light" role="alert">
+                                                    {{offre?.product?.prix }}
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="alert alert-light" role="alert">
+                                                    {{offre?.client?.adress}}
+                                                </div>
+                                            </td>
+                                           
+                                         
+                                        </tr>
+                            
+                                    </tbody>
+                                </table>
+                                <div *ngIf="listReservation.length===0">
+                                    <div class="alert alert-primary" role="alert">
+                                        Pas des reservations!
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+         <!-- shop area end -->
+
+        
+
+         
+      </main>
+      
+
+      <!-- footer area start -->
+      <app-footer></app-footer>
+      <!-- footer area end -->
+
+
+
+      
+   </body>
+
+<!-- Mirrored from html.hixstudio.net/ChasoStore-prv/ChasoStore/shop-filter-offcanvas.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Feb 2024 16:29:29 GMT -->
+</html>

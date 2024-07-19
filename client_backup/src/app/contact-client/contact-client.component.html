@@ -1,0 +1,205 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+   
+<!-- Mirrored from html.hixstudio.net/shofy-prv/shofy/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Feb 2024 16:28:11 GMT -->
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Khazefi - Multipurpose eCommerce HTML Template</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Place favicon.ico in the root directory -->
+      <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+
+      
+   </head>
+   <body>
+      <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+
+      <!-- pre loader area start -->
+      <app-chargement></app-chargement>
+      <!-- pre loader area end -->
+
+      <!-- back to top start -->
+      <div class="back-to-top-wrapper">
+         <button id="back_to_top" type="button" class="back-to-top-btn">
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>               
+         </button>
+      </div>
+      <!-- back to top end -->
+
+    
+
+      <!-- mobile menu area start -->
+      <app-menu></app-menu>
+      <!-- mobile menu area end -->
+
+      
+
+      
+
+      <!-- header area start -->
+      <app-header></app-header>
+      <!-- header area end -->
+
+      <main>
+
+         <!-- breadcrumb area start -->
+         <section class="breadcrumb__area include-bg text-center pt-95 pb-50">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xxl-12">
+                     <div class="breadcrumb__content p-relative z-index-1">
+                        <h3 class="breadcrumb__title"> Contact-US</h3>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- breadcrumb area end -->
+
+
+         <!-- contact area start -->
+         <section class="tp-contact-area pb-100">
+            <div class="container">
+                <div class="tp-contact-inner">
+                    
+                        <div class="row">
+                            <div class="col-xl-9 col-lg-8">
+                                <div class="tp-contact-wrapper">
+                                    <h3 class="tp-contact-title">Send message</h3>
+                                    <div class="tp-contact-form">
+                                        <form (ngSubmit)="addNewContact()" [formGroup]="contactForm">
+                                            <div class="tp-contact-input-wrapper">
+                                                <div class="tp-contact-input-box">
+                                                    <div class="tp-contact-input">
+                                                        <input name="nom" id="nom" type="text" placeholder="Shahnewaz Sakil" formControlName ="nom">
+                                                    </div>
+                                                    <div class="tp-contact-input-title">
+                                                        <label for="name">Name</label>
+                                                    </div>
+                                                </div>
+                                                <div class="tp-contact-input-box">
+                                                    <div class="tp-contact-input">
+                                                        <input name="email" id="email" type="email" placeholder="khazefishop@gmail.com" formControlName ="email">
+                                                    </div>
+                                                    <div class="tp-contact-input-title">
+                                                        <label for="email">Email</label>
+                                                    </div>
+                                                </div>
+                                                <div class="tp-contact-input-box">
+                                                    <div class="tp-contact-input">
+                                                        <input name="tel" id="tel" type="tel" placeholder="Shahnewaz Sakil" formControlName ="tel">
+                                                    </div>
+                                                    <div class="tp-contact-input-title">
+                                                        <label for="tel">Phonenumber</label>
+                                                    </div>
+                                                </div>
+                                                <div class="tp-contact-input-box">
+                                                    <div class="tp-contact-input">
+                                                        <input name="sujet" id="sujet" type="text" placeholder="Write your subject" formControlName ="sujet">
+                                                    </div>
+                                                    <div class="tp-contact-input-title">
+                                                        <label for="sujet">Subject</label>
+                                                    </div>
+                                                </div>
+                                                <div class="tp-contact-input-box">
+                                                    <div class="tp-contact-input">
+                                                        <textarea id="msg" name="msg" placeholder="Write your message here..." formControlName ="msg"></textarea>
+                                                    </div>
+                                                    <div class="tp-contact-input-title">
+                                                        <label for="msg">Message</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tp-contact-suggetions mb-20">
+                                                <div class="tp-contact-remeber">
+                                                    <input id="remeber" type="checkbox">
+                                                    <label for="remeber">Save.</label>
+                                                </div>
+                                            </div>
+                                            
+                                                <button type="submit" class="btn btn-primary" >Send msg</button>
+                                           
+                                        </form>
+                                        <p class="ajax-response"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4">
+                                <div class="tp-contact-info-wrapper">
+                                    <div class="tp-contact-info-item">
+                                        <div class="tp-contact-info-icon">
+                                            <span>
+                                                <img src="assets/img/contact/contact-icon-1.png" alt="">
+                                            </span>
+                                        </div>
+                                        <div class="tp-contact-info-content">
+                                            <p data-info="mail"><a href="mailto:contact@khazefishop.com">contact@khazefishop.com</a></p>
+                                            <p data-info="phone"><a href="tel:670-413-90-762">+216 23 569 899</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="tp-contact-info-item">
+                                        <div class="tp-contact-info-icon">
+                                            <span>
+                                                <img src="assets/img/contact/contact-icon-2.png" alt="">
+                                            </span>
+                                        </div>
+                                        <div class="tp-contact-info-content">
+                                            <p>
+                                                <a href="https://www.google.com/maps/place/New+York,+NY,+USA/@40.6976637,-74.1197638,11z/data=!3m1!4b1!4m6!3m5!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2" target="_blank">
+                                                    <br> Tunisie, Nabeul 8000
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tp-contact-info-item">
+                                        <div class="tp-contact-info-icon">
+                                            <span>
+                                                <img src="assets/img/contact/contact-icon-3.png" alt="">
+                                            </span>
+                                        </div>
+                                        <div class="tp-contact-info-content">
+                                            <div class="tp-contact-social-wrapper mt-5">
+                                                <h4 class="tp-contact-social-title">Rechercher sur les réseaux sociaux</h4>
+                                                <div class="tp-contact-social-icon">
+                                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                  
+                </div>
+            </div>
+        </section>
+        
+         <!-- contact area end -->
+
+         <!-- map area start -->
+         <!-- map area end -->
+
+      </main>
+      
+
+      <!-- footer area start -->
+      <app-footer></app-footer>
+      <!-- footer area end -->
+
+
+
+   </body>
+
+<!-- Mirrored from html.hixstudio.net/shofy-prv/shofy/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Feb 2024 16:28:12 GMT -->
+</html>
