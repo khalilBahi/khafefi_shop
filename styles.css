@@ -72,8 +72,6 @@ nav ul li a:hover {
     color: #e0e0e0;
     height: 70vh; /* Adjust height as needed */
     overflow: hidden;
-    background: url('path-to-your-image.jpg') no-repeat center center; /* Background image */
-    background-size: cover; /* Cover the whole section */
 }
 
 .intro img.cover-image {
